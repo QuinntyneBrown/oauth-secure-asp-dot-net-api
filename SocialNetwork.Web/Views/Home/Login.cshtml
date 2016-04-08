@@ -1,0 +1,16 @@
+﻿
+<h2>Login</h2>
+<div class="container">
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+        <label>Username</label>
+        @Html.TextBox("username")
+
+        <label>Password</label>
+        @Html.Password("password")
+
+        <div>
+            <button class="btn btn-lg btn-primary" type="submit">LOGIN</button>
+        </div>
+    }
+</div>

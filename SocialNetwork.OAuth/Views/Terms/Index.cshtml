@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Please Accept Terms</title>
+</head>
+<body>
+    <div>
+        <h1>Please Accept the Terms and Conditions</h1>
+        @using (Html.BeginForm("Index", "Terms", FormMethod.Post))
+        {
+            @Html.CheckBox("acceptTerms")
+            <label>I accept the Terms and Conditions</label>
+            <div>
+                <input type="submit" value="ACCEPT" />
+            </div>
+        }
+    </div>
+</body>
+</html>
